@@ -1,4 +1,8 @@
+package StudentMarksReport
+        
 import javax.swing.JOptionPane;
+import java.util.Scanner;
+        
 public class Student {
     protected int StudentNumber,assigmentResult,testResult,examResult;
     //Create a constructor that accepts the student number, test result, assignment result and the exam result as parameters
@@ -49,19 +53,25 @@ public class Student_Report extends Student{
     public void getAssigmentResult() {
         super.getAssigmentResult();
 }
-static final double AssignmentWeight = 0.25;
-static final double TestWeight = 0.25;
-static final double ExamWeight = 0.50
-public static void main(String[] args) {
-AssFinal = 0.00
-TestFinal = 0.00
-ExamFinal = 0.00
-Static Scanner input = new Scanner (System.in)
-AssFinal = AssigmentResult * 0.25
-TestFinal = TestResult * 0.25
-ExamFinal = ExamResult * 0.50
-JOptionPane.showInputDialog("Your assessment weighting is : " + AssFinal);
-JOptionPane.showInputDialog("Your Test weighting is : " + TestFinal);
-JOptionPane.showInputDialog("Your assessment weighting is : " + TestFinal);
 
-}
+	public class print_report{
+	
+	static final double assignmentWeight = 0.25;
+	static final double testWeight = 0.25;
+	static final double examWeight = 0.50;
+
+	public static void main(String[] args) {
+
+	AssFinal = 0.00;
+	TestFinal = 0.00;
+	ExamFinal = 0.00;
+	
+	Static Scanner input = new Scanner (System.in);
+	
+	AssFinal = AssigmentResult * 0.25;
+	TestFinal = TestResult * 0.25;
+	ExamFinal = ExamResult * 0.50;
+	
+	JOptionPane.showInputDialog("Your assessment weighting is : " + AssFinal);
+	JOptionPane.showInputDialog("Your Test weighting is : " + TestFinal);
+	JOptionPane.showInputDialog("Your assessment weighting is : " + TestFinal);
