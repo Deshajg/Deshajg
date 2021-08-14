@@ -1,0 +1,67 @@
+import javax.swing.JOptionPane;
+public class Student {
+    protected int StudentNumber,assigmentResult,testResult,examResult;
+    //Create a constructor that accepts the student number, test result, assignment result and the exam result as parameters
+    public Student(int StudentNumber, int assigmentResult, int testResult, int examResult) {
+        this.StudentNumber = StudentNumber;
+        this.assigmentResult = assigmentResult;
+        this.testResult = testResult;
+        this.examResult = examResult;
+    }
+    public Student(){
+        this.getStudentNumber();
+        this.getAssigmentResult();
+        this.getTestResult();
+        this.getExamResult();
+    }
+    //Create get methods for the variables (UseJOptionePane to get variable from the user)
+    public void getStudentNumber() {
+        this.StudentNumber = Integer.parseInt(JOptionPane.showInputDialog(null,"Enter Student Number"));
+    }
+    public void getAssigmentResult() {
+        this.assigmentResult = Integer.parseInt(JOptionPane.showInputDialog(null,"Enter Student Assigment Result : "));
+    }
+    public void getTestResult() {
+        this.testResult = Integer.parseInt(JOptionPane.showInputDialog(null,"Enter Student Test Result : "));;
+    }
+    public void getExamResult() {
+        this.examResult = Integer.parseInt(JOptionPane.showInputDialog(null,"Enter Student Exam Result : "));
+    }
+    
+}
+
+public class Student_Report extends Student{
+    public Student_Report(int StudentNumber, int assigmentResult, int testResult, int examResult) {
+        super(StudentNumber, assigmentResult, testResult, examResult);
+    }
+    public Student_Report() {
+    }
+    
+    @Override
+    public void getExamResult() {
+        super.getExamResult(); 
+    }
+    @Override
+    public void getTestResult() {
+        super.getTestResult();
+    }
+    @Override
+    public void getAssigmentResult() {
+        super.getAssigmentResult();
+}
+static final double AssignmentWeight = 0.25;
+static final double TestWeight = 0.25;
+static final double ExamWeight = 0.50
+public static void main(String[] args) {
+AssFinal = 0.00
+TestFinal = 0.00
+ExamFinal = 0.00
+Static Scanner input = new Scanner (System.in)
+AssFinal = AssigmentResult * 0.25
+TestFinal = TestResult * 0.25
+ExamFinal = ExamResult * 0.50
+JOptionPane.showInputDialog("Your assessment weighting is : " + AssFinal);
+JOptionPane.showInputDialog("Your Test weighting is : " + TestFinal);
+JOptionPane.showInputDialog("Your assessment weighting is : " + TestFinal);
+
+}
